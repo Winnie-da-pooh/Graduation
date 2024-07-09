@@ -1,0 +1,93 @@
+/* Ensure the body takes up the full viewport height */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+/* Style the download button */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #25458d;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+/* Add hover effect */
+button:hover {
+    background-color: #748fcd;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Add active state effect */
+button:active {
+    background-color: #25458d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the progress bar container */
+#progress-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style for the progress bar */
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    transition: width 0.1s linear;
+}
+
+/* Style for the "Download Complete" message */
+#complete-message {
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #4caf50;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style for the "close?" text */
+#close-tab-button {
+    color: #e74c3c;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+/* Add hover effect for the "close?" text */
+#close-tab-button:hover {
+    color: #c0392b;
+}
+
+/* Style for the remaining downloads text */
+#remaining-downloads {
+    margin-top: 10px; /* Adjust margin as needed */
+	margin-left: -360px;
+    font-size: 14px;
+    color: #555;
+    text-align: left; /* Align text to the left */
+}
